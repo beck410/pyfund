@@ -2,9 +2,8 @@
 
 def convert(s):
     '''Convert to an integer.'''
-    x = -1
     try:
         x = int(s)
     except (ValueError, TypeError):
-        pass
+        x = -1
     return x
