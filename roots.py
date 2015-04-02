@@ -1,3 +1,5 @@
+import sys
+
 def sqrt(x):
     '''Compute square roots using the method of Heron of Alexandria.
 
@@ -20,11 +22,13 @@ def sqrt(x):
         i += 1
     return guess
 
-
 def main():
-    print(sqrt(9))
-    print(sqrt(2))
-    print(sqrt(-1))
+    try:
+        print(sqrt(9))
+        print(sqrt(2))
+        print(sqrt(-1))
+    except ValueError as e:
+        print(e)
 
 
 if __name__ == '__main__':
